@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# .DS_Store
+.DS_Store
+
+# Files
+LoanStats_2019Q1.csv
+
 # Distribution / packaging
 .Python
 build/
