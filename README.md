@@ -55,7 +55,7 @@ Classification Report:
 
 ![cc_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/cc_undersampling_class.png)
 
-This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **51 %** with a recall of **60 %** for high risk loans.
+This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy dropped roughly 10% to **51 %** with a recall of **60 %** for high risk loans.
 
 **Method 4: SMOTEENN (a combination of oversampling and undersampling; SMOTE is used, then data points are dropped based on their proximity to their nearest neighbors with different classes.)**
 
@@ -70,3 +70,17 @@ Classification Report:
 ![smoteenn_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/combo_overunder_class.png)
 
 This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **62 %** with a recall of **70 %** for high risk loans.
+
+**Method 4: Balanced random forest (a combination of oversampling and undersampling; SMOTE is used, then data points are dropped based on their proximity to their nearest neighbors with different classes.)**
+
+Results: **Better**
+
+Confusion Matrix:
+
+![brf_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/brf_cm.png)
+
+Classification Report:
+
+![brf_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/brf_classification.png)
+
+This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **78 %** with a recall of **67 %** for high risk loans. The recall for low-risk loans was quite high at **91 %** which is the highest thus far among the models. This in conjunction with the recall for high-risk is looking much better.
