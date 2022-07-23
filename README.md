@@ -41,5 +41,32 @@ Classification Report:
 
 ![smote_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/smote_oversample_class.png)
 
-This model did not categorize the high risk loans with adequate sensitivity (recall), though it did slightly better than the naive random oversampling method. Total SMOTE accuracy was **63 %** with a recall **61 %** for high risk loans.
+This model did not categorize the high risk loans with adequate sensitivity (recall), though it did slightly better than the naive random oversampling method. Total SMOTE accuracy was **63 %** with a recall of **61 %** for high risk loans.
 
+**Method 3: Cluster centroid undersampling (synthetic points are generated to represent identified clusters of majority class, then the majority class is undersampled to balance with the minority class)**
+
+Results: **Poor**
+
+Confusion Matrix:
+
+![cc_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/cc_undersampling_cm.png)
+
+Classification Report:
+
+![cc_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/cc_undersampling_class.png)
+
+This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **51 %** with a recall of **60 %** for high risk loans.
+
+**Method 4: SMOTEENN (a combination of oversampling and undersampling; SMOTE is used, then data points are dropped based on their proximity to their nearest neighbors with different classes.)**
+
+Results: **Poor**
+
+Confusion Matrix:
+
+![smoteenn_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/combo_overunder_cm.png)
+
+Classification Report:
+
+![smoteenn_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/combo_overunder_class.png)
+
+This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **62 %** with a recall of **70 %** for high risk loans.
