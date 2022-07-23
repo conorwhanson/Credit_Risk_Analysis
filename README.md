@@ -19,7 +19,11 @@ Finanical data from Lending Club was imported, cleaned, encoded, and split into 
 
 Results: **Poor**
 
+Confusion Matrix:
+
 ![random_oversample_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/oversampling_cm.png)
+
+Classification Report:
 
 ![random_oversample_classification](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/oversampling_imb_class.png)
 
