@@ -18,6 +18,7 @@ Finanical data from Lending Club was imported, cleaned, encoded, and split into 
 **Method 1: Naive random oversampling (randomly selects minority class data points until classes are balanced)**
 
 Results: **Poor**
+
 ![random_oversample_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/oversampling_cm.png)
 
 ![random_oversample_classification](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/oversampling_imb_class.png)
