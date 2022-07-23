@@ -27,6 +27,19 @@ Classification Report:
 
 ![random_oversample_classification](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/oversampling_imb_class.png)
 
-This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **63 %** with a recall on high risk loans of **57 %**.
+This model did not categorize the high risk loans with adequate sensitivity (recall). Total accuracy was **63 %** with a recall of **57 %** for high risk loans.
 
 **Method 2: SMOTE (synthetic minority oversampling technique; synthetically interpolates data points from minority class to add into that class)**
+
+Results: **Poor**
+
+Confusion Matrix:
+
+![smote_cm](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/smote_oversample_cm.png)
+
+Classification Report:
+
+![smote_class](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/smote_oversample_class.png)
+
+This model did not categorize the high risk loans with adequate sensitivity (recall), though it did slightly better than the naive random oversampling method. Total SMOTE accuracy was **63 %** with a recall **61 %** for high risk loans.
+
