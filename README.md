@@ -1,5 +1,7 @@
 # Credit Risk Analysis with Machine Learning
 
+![credit_risk](https://github.com/conorwhanson/Credit_Risk_Analysis/blob/main/resources/credit_risk.png)
+
 ## Purpose & Overview
 The purpose of this project was to utilize a variety of machine learning models to predict credit risk.
 
